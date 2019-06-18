@@ -97,3 +97,8 @@ header .header-with-search__search-section button {
 .menu-iframe {
     width: 100vw;
 }
+
+.page-footer iframe{
+    height: 550px;
+    padding: 15px;
+}
