@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/resources/styles/header-and-menu.css">
+    <!-- <link rel="stylesheet" href="resources/styles/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="resources/styles/bootstrap/bootstrap-grid.min.css"> -->
+
+    <style>
+        ul {
+            display: block;
+            text-align: center;
+
+            margin: 0;
+        }
+
+
+
+        li {
+            color: white;
+            font-size: 1.1em;
+            font-style: bold;
+            display: inline-block;
+            border: 1px solid rgb(139, 134, 134);
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #444444;
+        }
+
+        .item {
+            position: relative;
+        }
+        .item:hover {
+            background-image: linear-gradient(#ec2208, #f05b21);
+        }
+
+        .container {
+            display: block;
+            width: 50%;
+            background-color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f5e069;
+            
+            min-width: 400px;
+            width: 50%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+        }
+        .item:hover .dropdown-content{
+            display: block;
+
+        }
+        .dropdown-item {
+            display: inline-block;
+            text-align: left;
+            
+            color: #000000;
+        }
+
+        .dropdown-item ul li {
+            display: block;
+            font-size: 0.8em;
+            text-align: left;
+            
+            color: #000000;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul>
+            <li class="item active" href="#">TRANG CHỦ</li>
+            <li class="item" href="#">GIỚI THIỆU</li>
+            <li class="item dropdown" href="#">
+                <a toggle="dropdown"> THƯƠNG HIỆU </a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li class="dropdown-item">
+                            <a> Các hãng bán chạy </a>
+                            <ul>
+                                <li>Casio</li>
+                                <li>Citizen</li>
+                                <li>Seiko</li>
+                                <li>OP</li>
+
+                            </ul>
+
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a> Tin dùng </a>
+                            <ul>
+                                <li>Orient</li>
+                                <li>G-Shock & Baby-G</li>
+                                <li>Candino</li>
+                                <li>Fossils</li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </li>
+
+            <li class="item" href="#">ĐỒNG HỒ NAM</li>
+            <li class="item" href="#">ĐỒNG HỒ NỮ</li>
+            <li class="item" href="#">SẢN PHẨM KHÁC</li>
+            <li class="item" href="#">HỆ THỐNG CỬA HÀNG</li>
+            <li class="item" href="#">HƯỚNG DẪN MUA HÀNG</li>
+            <li class="item" href="#">TIN TỨC SỰ KIỆN</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
