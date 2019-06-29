@@ -1,24 +1,28 @@
-<!doctype html>
+x
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>
-    Mua bán đồng hồ
-  </title>
-
-  <!-- Required meta tags -->
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <title>Bán đồng hồ</title>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/normalize.css">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="public/styles/main.css">
-  <link rel="stylesheet" href="public/styles/header-and-menu.css">
-  <link rel="stylesheet" href="public/styles/header-link.css">
-  <link rel="stylesheet" href="public/styles/search-module.css">
-  <link rel="stylesheet" href="public/styles/slider-module.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header-and-menu.css">
+  <link rel="stylesheet" href="styles/header-link.css">
+  <link rel="stylesheet" href="styles/search-module.css">
+  <link rel="stylesheet" href="styles/slider-module.css">
+  
+  
 
 </head>
 
@@ -32,7 +36,7 @@
       <section class="header-with-search">
         <!-- Logo -->
         <div class="header-with-search__logo-section">
-          <img src="public/images/logo02.png" alt="logo">
+          <img src="images/logo02.png" alt="logo">
         </div>
         <div class="header-with-search__search-section">
           <div class="wrap">
@@ -69,7 +73,6 @@
               <li class="item" href="#">GIỚI THIỆU</li>
               <li class="item dropdown" href="#">
                 <a toggle="dropdown"> THƯƠNG HIỆU </a>
-
                 <div class="dropdown-content">
                   <ul>
                     <li class="dropdown-item">
@@ -114,11 +117,11 @@
         <section class="slider">
           <div id="slider">
             <figure>
-              <img src="public/images/slider01.jpg" alt>
-              <img src="public/images/slider02.jpg" alt>
-              <img src="public/images/slider03.jpg" alt>
-              <img src="public/images/slider04.jpg" alt>
-              <img src="public/images/slider01.jpg" alt>
+              <img src="images/slider01.jpg" alt>
+              <img src="images/slider02.jpg" alt>
+              <img src="images/slider03.jpg" alt>
+              <img src="images/slider04.jpg" alt>
+              <img src="images/slider01.jpg" alt>
             </figure>
           </div>
         </section>
@@ -133,37 +136,36 @@
         <div class="md-image">
           <!-- Banner -->
           <div class="main-banner">
-
-            <img src="public/images/main-bn.jpg" alt="Main banner" style="width: 100%; border-radius: 20px">
-
+            <img src="images/main-bn.jpg" alt="Main banner" style="width: 100%; border-radius: 20px">
           </div>
           <!-- Policies -->
           <div class="policy">
-            <iframe src="policies.html" frameborder="0" scrolling="no" style="width: 100%">
-            </iframe>
+              <iframe src="policies.html" frameborder="0" scrolling="no" style="width: 100%"></iframe>
           </div>
-
-
-
           <div class="favorite-item">
-
+            <div id="item-gallery"></div>
           </div>
         </div>
       </div>
 
     </div>
     <div class="page-footer">
-      <iframe src="footer/index.html" frameborder="0" scrolling="no" style="width: 100%"></iframe>
+        <iframe src="footer/index.html" frameborder="0" scrolling="no" style="width: 100%"></iframe>
     </div>
-
   </div>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

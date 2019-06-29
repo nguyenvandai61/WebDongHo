@@ -1,10 +1,16 @@
 var express = require('express');
-var mysql = require('mysql');
+import { MongoClient, ObjectID } from 'mongodb';
 
 var app = express();
 
-app.listen(3308, () => {
-    console.log("Node server running http://localhost:3308");
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'ejs');
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
+// app.use(express.static(path.join(__dirname, 'public')));
+
+app.listen(5000, () => {
+    console.log("Node server running http://localhost:5000");
 });
 
 var con = mysql.createConnection({
